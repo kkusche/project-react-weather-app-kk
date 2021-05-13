@@ -1,38 +1,341 @@
-.App {
+/*======================================
+*            general rules        *
+======================================*/
+
+.App body {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+}
+
+/*======================================
+*            Top Section      *
+======================================*/
+
+.App .form-control {
+  border: 1px solid rgb(0, 0, 0);
+}
+.App .form-control:focus {
+  border-color: black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+.App .form-floating {
+  width: 83%;
+}
+
+.App .btn-outline-secondary {
+  border: 1px solid black;
+  color: black;
+}
+.App .btn:hover {
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.App .btn:active {
+  text-decoration: none;
+}
+.App .btn:active {
+  text-decoration: none;
+}
+.App .btn:visited {
+  text-decoration: none !important;
+}
+
+.App #button-addon2 {
+  font-size: 26px;
+  color: black;
+}
+
+/*======================================
+*            Middle Section      *
+======================================*/
+
+/*.App #celsius-link {
+  color: black;
   text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App #celsius-link:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App #fahrenheit-link {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.App #fahrenheit-link:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}*/
+
+.App #today {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+}
+
+.App #description {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.App p {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.App #humidityID {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.App #windID {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.App .card-body1 {
+  color: black;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 0px;
+}
+
+.App .WeatherTemperature {
+  font-weight: bold;
+  font-size: 42px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.App h6 {
+  font-weight: bold;
+  font-size: 56px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.App ul {
+  list-style: none;
+  line-height: 1.25;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.App .currentLocation {
+  margin-left: 150px;
+  margin-top: 75px;
+}
+
+.App #current-location-button {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 48px;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 12px 30px 24px 30px;
+  margin-bottom: 10px;
+}
+
+/*.App #current-location-button:hover {
+  background-color: white;
+  cursor: pointer;
+  transition: all 200ms ease;
+}*/
+
+.App h1 {
+  font-size: 36px;
+  margin-top: 25px;
+}
+
+/*======================================
+*            Bottom Section      *
+======================================*/
+.App .bottomSection {
+  text-align: center;
+  width: 100%;
+}
+
+/*======================================
+*            Footer Section      *
+======================================*/
+.App .footerSection {
+  text-align: right;
+  padding: 0px 80px 0px 0px;
+}
+
+/*======================================
+*            Media queries      *
+======================================*/
+
+@media (max-width: 767.98px) {
+  .App .topSection {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .App .middleSection {
+    text-align: center;
+  }
+
+  .App #fahrenheit-link {
+    margin-left: 5px;
+  }
+  .card-body1 {
+    margin-bottom: 25px;
+  }
+  .App #card-body2 {
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .App .currentLocation {
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .App .footerSection {
+    margin-top: 25px;
+    padding-right: 25px;
+  }
+  .App .card {
+    margin-top: 16px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) {
+  .App .topSection {
+    margin-top: 50px;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .App .input-group {
+    margin: 0;
+  }
+  .App .middleSection {
+    margin-bottom: 50px;
+  }
+  .App .card {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App body {
+    height: 100vh;
+  }
+  .App .sectionsWrapper {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .App .sectionsWrapper .topSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .App .sectionsWrapper .middleSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  .App .sectionsWrapper .bottomSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1200px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .App #forecast {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .App .sectionsWrapper .footerSection {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 1280px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
