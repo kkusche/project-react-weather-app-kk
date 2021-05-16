@@ -32,7 +32,7 @@ export default function WeatherForecastDay(props) {
           </h4>
           <h5 className="weather-icon">
             <i>
-              <WeatherIcon code={props.data.weather[0].icon} size={36} />
+              <WeatherIcon code={props.data.weather[0].icon} />
             </i>
           </h5>
           <p className="card-text">
